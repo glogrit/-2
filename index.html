@@ -68,7 +68,10 @@
     <div id="main">
         <h1>Online shop</h1>
         <img src="https://i0.wp.com/images-ng.pixai.art/images/orig/f183110e-b0fd-458d-a337-ff045f0628e9?ssl=1">
-        <p>lorem10</p>
+        <p>по умолчанию браузер ставит жирность `bold` (обычно это числовое значение 700), 
+            что перебивает ваше правило `font-weight: 200` на уровне `body`. Чтобы текст 
+            заголовка стал тонким, нужно сбросить его вес принудительно: `h1 { font-weight:
+            200; ... }`.</p>
         <button id="buy">Купить</button>
     </div>
 </body>
