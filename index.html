@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
@@ -28,7 +29,6 @@
         }
 
         h1 {
-        color: #ff007a;
         margin-top: 50px;
         margin-bottom: 10px;
         }
@@ -47,17 +47,17 @@
         border: 0px;
         border-radius: 5px;
         margin-top: 50px;
-        height: 60px;
+        height: 60px:
         width: 200px;
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
         transition: all 500ms ease;
         color: var(--tg-theme-button-color);
-        background: var(--tg-theme-button-bg-color);
+        background: var(--tg-theme-button-text-color);
         }
 
-        button:hover {
+    button:hover {
         background: var(--tg-theme-secondary-bg-color);
         }
 
@@ -69,11 +69,14 @@
     <div id="main">
         <h1>Online shop</h1>
         <img src="https://i0.wp.com/images-ng.pixai.art/images/orig/f183110e-b0fd-458d-a337-ff045f0628e9?ssl=1">
-        <p>по умолчанию браузер ставит жирность `bold` (обычно это числовое значение 700), 
-            что перебивает ваше правило `font-weight: 200` на уровне `body`. Чтобы текст 
-            заголовка стал тонким, нужно сбросить его вес принудительно: `h1 { font-weight:
-            200; ... }`.</p>
+        <p>по умолчанию браузер ставит жирность `bold` (обычно это числовое значение 700),
+            что перебивает ваше правило `font-weight:
+            200` на уровне `body`. Чтобы текст заголовка стал тонким,
+            нужно сбросить его вес принудительно: `h1 { font-weight: 200; ... }`.</p>
         <button id="buy">Купить</button>
     </div>
+    <script>
+    Telegram.WebApp.ready();
+    </script>
 </body>
 </html>
